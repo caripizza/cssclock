@@ -1,3 +1,5 @@
+/* Sourced from https://cssanimation.rocks/clocks/ */
+
 body {
   background-image: repeating-linear-gradient(aqua, yellow);
   height: 100vh;
@@ -7,12 +9,11 @@ body {
   margin: 5% 0 0 5%;
   border-radius: 50%;
   border: 2px solid black;
-  background: springgreen url(ios_clock.svg) no-repeat center;
+  background: gold url(ios_clock.svg) no-repeat center;
   background-size: 88%;
   position: relative;
   height: 30em;
   width: 30em;
-  // padding-bottom: 31%;
 }
 
 .clock:after {
@@ -57,11 +58,11 @@ body {
 }
 
 .seconds {
-  background: black;
-  height: 44%;
+  background: #000;
+  height: 45%;
   left: 49.5%;
   position: absolute;
-  top: 12%;
+  top: 14%;
   transform-origin: 50% 80%;
   width: 1%;
   z-index: 8;
@@ -79,9 +80,11 @@ body {
 
 .minutes-container {
   // animation: rotate 3600s infinite linear;
-  animation: rotate 3600s infinite steps(60);
+  // animation: rotate 3600s infinite steps(60);
+  transition: transform 0.3s cubic-bezier(.4,2.08,.55,.44);
 }
 .seconds-container {
   // animation: rotate 60s infinite linear;
-  animation: rotate 60s infinite steps(60);
+  // animation: rotate 60s infinite steps(60);
+  transition: transform 0.2s cubic-bezier(.4,2.08,.55,.44);
 }

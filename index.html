@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
+<!--// Sourced from https://cssanimation.rocks/clocks/-->
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,7 +9,10 @@
   <title>CSS Clock Animation</title>
 </head>
 
-<body>
+<body onload="initLocalClocks();
+  setUpMinuteHands();
+  moveSecondHands();"
+>
 
   <article class="clock">
 
@@ -27,7 +30,7 @@
 
   </article>
 
-  <!-- <script src="index.js"></script> -->
 </body>
+<script src="index.js"></script>
 
 </html>
