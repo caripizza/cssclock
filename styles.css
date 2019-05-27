@@ -3,17 +3,21 @@
 body {
   background-image: repeating-linear-gradient(aqua, yellow);
   height: 100vh;
+  width: 100vw;
+  background-repeat: no-repeat;
+  margin: 0;
+  overflow: hidden;
 }
 
 .clock {
-  margin: 5% 0 0 5%;
+  margin: 12vh auto;
   border-radius: 50%;
-  border: 2px solid black;
-  background: gold url(ios_clock.svg) no-repeat center;
+  background: rgba(47, 1, 78, 0.158) url(ios_clock.svg) no-repeat center;
+  filter: drop-shadow(2rem 15rem .01rem black);
   background-size: 88%;
   position: relative;
-  height: 30em;
-  width: 30em;
+  height: 20em;
+  width: 20em;
 }
 
 .clock:after {
